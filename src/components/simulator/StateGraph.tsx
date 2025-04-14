@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 
 interface Transition {
@@ -130,7 +129,7 @@ const StateGraph: React.FC<StateGraphProps> = ({ transitions, currentState }) =>
               <path 
                 d={getBezierPath(edge.source, edge.target)} 
                 fill="none" 
-                className={`transition-all duration-300 ${isActive ? 'stroke-green-500 stroke-[2px]' : 'stroke-gray-300'}`}
+                className={`${isActive ? 'stroke-green-500 stroke-[2px]' : 'stroke-gray-300'}`}
                 markerEnd="url(#arrowhead)"
               />
               
@@ -177,7 +176,6 @@ const StateGraph: React.FC<StateGraphProps> = ({ transitions, currentState }) =>
                 cy={pos.y} 
                 r="30"
                 className={`
-                  transition-all duration-300 
                   ${isCurrentState ? 'fill-green-100 stroke-green-500 stroke-2' : 'fill-white stroke-gray-300'} 
                   ${isStartState ? 'stroke-blue-500 stroke-[3px]' : ''}
                 `}
