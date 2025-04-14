@@ -1,9 +1,6 @@
-
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/button';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Tutorial = () => {
   return (
@@ -23,11 +20,11 @@ const Tutorial = () => {
           <p className="text-gray-600 mb-6">Learn how to implement a binary number incrementer using Turing machines</p>
           
           <div className="grid gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>What is a Turing Machine?</CardTitle>
-              </CardHeader>
-              <CardContent>
+            <div className="p-6">
+              <div className="mb-4">
+                <h2 className="text-xl font-semibold">What is a Turing Machine?</h2>
+              </div>
+              <div>
                 <p className="mb-4">
                   A Turing machine is a mathematical model of computation that defines an abstract machine which manipulates symbols on a strip of tape according to a table of rules. Despite its simplicity, it can simulate the logic of any computer algorithm.
                 </p>
@@ -53,14 +50,14 @@ const Tutorial = () => {
                   </li>
                   <li>The machine halts in the "done" state when the increment is complete.</li>
                 </ol>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
             
-            <Card>
-              <CardHeader>
-                <CardTitle>Creating a State Table</CardTitle>
-              </CardHeader>
-              <CardContent>
+            <div className="p-6">
+              <div className="mb-4">
+                <h2 className="text-xl font-semibold">Creating a State Table</h2>
+              </div>
+              <div>
                 <p className="mb-4">
                   The state table for our binary incrementer defines what the machine should do in each state when reading each possible symbol (0, 1, or blank).
                 </p>
@@ -113,14 +110,14 @@ table:
                 <p className="mt-4">
                   After execution, our "1011" (decimal 11) becomes "1100" (decimal 12).
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
             
-            <Card>
-              <CardHeader>
-                <CardTitle>Try It Yourself</CardTitle>
-              </CardHeader>
-              <CardContent>
+            <div className="p-6">
+              <div className="mb-4">
+                <h2 className="text-xl font-semibold">Try It Yourself</h2>
+              </div>
+              <div>
                 <p className="mb-4">
                   Now that you understand the binary increment Turing machine, try creating and running it in our simulator!
                 </p>
@@ -133,8 +130,8 @@ table:
                     </Button>
                   </Link>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </div>
