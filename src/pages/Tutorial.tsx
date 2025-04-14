@@ -112,26 +112,6 @@ table:
                 </p>
               </div>
             </div>
-            
-            <div className="p-6">
-              <div className="mb-4">
-                <h2 className="text-xl font-semibold">Try It Yourself</h2>
-              </div>
-              <div>
-                <p className="mb-4">
-                  Now that you understand the binary increment Turing machine, try creating and running it in our simulator!
-                </p>
-                
-                <div className="flex justify-between">
-                  <Link to="/simulator">
-                    <Button>
-                      Open Simulator
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
