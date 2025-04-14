@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import { Link } from "react-router-dom";
-import TuringAnimation from "@/components/landing/TuringAnimation";
+
 const Index = () => {
   return <div className="min-h-screen flex flex-col">
       {/* Navigation */}
@@ -35,12 +35,6 @@ const Index = () => {
                 <Play className="ml-2 h-4 w-4" />
               </Button>
             </Link>
-          </div>
-        </div>
-        
-        <div className="flex-1 flex items-center justify-center p-6 md:p-12">
-          <div className="w-full max-w-lg aspect-video bg-gray-50 rounded-lg shadow-sm border overflow-hidden">
-            <TuringAnimation />
           </div>
         </div>
       </div>
