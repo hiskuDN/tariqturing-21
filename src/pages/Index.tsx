@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -15,14 +14,14 @@ const Index = () => {
       </nav>
       
       {/* Hero Section */}
-      <div className="flex-1 flex flex-col md:flex-row">
-        <div className="flex-1 flex flex-col justify-center px-6 md:px-12 py-12">
+      <div className="flex-1 flex items-center justify-center">
+        <div className="text-center px-6 md:px-12 py-12 max-w-2xl">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Learn Turing Machines Visually</h1>
-          <p className="text-lg text-gray-600 mb-8 max-w-md">
+          <p className="text-lg text-gray-600 mb-8">
             Explore the foundations of computational theory through interactive animations 
             of Turing machines — the mathematical models that define what computers can solve.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/tutorial">
               <Button className="w-full sm:w-auto" variant="default">
                 Quick Tutorial
@@ -44,26 +43,26 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold mb-8 text-center">Key Features</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-sm border hover:shadow-md transition-shadow">
-              <h3 className="text-lg font-medium mb-2">Interactive State Diagram</h3>
-              <p className="text-gray-600">
-                Watch your machine's logic come to life with a dynamic graph showing active states and transitions during execution.
-              </p>
+          <div className="space-y-8 max-w-3xl mx-auto">
+            <div>
+              <h3 className="text-xl font-semibold mb-2">Interactive State Diagram</h3>
+              <ul className="list-disc pl-5 text-gray-600">
+                <li>Watch your machine's logic come to life with a dynamic graph showing active states and transitions during execution.</li>
+              </ul>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-sm border hover:shadow-md transition-shadow">
-              <h3 className="text-lg font-medium mb-2">Guided Learning Path</h3>
-              <p className="text-gray-600">
-                Follow our comprehensive tutorial that breaks down complex computational theory concepts into digestible lessons with practical examples you can run in the simulator.
-              </p>
+            <div>
+              <h3 className="text-xl font-semibold mb-2">Guided Learning Path</h3>
+              <ul className="list-disc pl-5 text-gray-600">
+                <li>Follow our comprehensive tutorial that breaks down complex computational theory concepts into digestible lessons with practical examples you can run in the simulator.</li>
+              </ul>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-sm border hover:shadow-md transition-shadow">
-              <h3 className="text-lg font-medium mb-2">Step-by-Step Execution</h3>
-              <p className="text-gray-600">
-                Follow the computation process from input to output, with controls to run, pause, or step through your algorithm at your own pace.
-              </p>
+            <div>
+              <h3 className="text-xl font-semibold mb-2">Step-by-Step Execution</h3>
+              <ul className="list-disc pl-5 text-gray-600">
+                <li>Follow the computation process from input to output, with controls to run, pause, or step through your algorithm at your own pace.</li>
+              </ul>
             </div>
           </div>
         </div>
